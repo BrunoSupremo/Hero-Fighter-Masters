@@ -1,0 +1,79 @@
+@charset "utf-8";
+@font-face{
+	font-family:'FontAwesome';
+	src:url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.eot?v=4.5.0');
+	src:url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.eot?#iefix&v=4.5.0') format('embedded-opentype'),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.woff2?v=4.5.0') format('woff2'),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.woff?v=4.5.0') format('woff'),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.ttf?v=4.5.0') format('truetype'),url('https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/fonts/fontawesome-webfont.svg?v=4.5.0#fontawesomeregular') format('svg');
+}
+.fa::after{
+	font-family: FontAwesome;
+	margin: 3px;
+}
+.fa-home::after 		{content: "\f015";}
+.fa-book::after 		{content: "\f02d";}
+.fa-users::after 		{content: "\f0c0";}
+.fa-download::after 	{content: "\f019";}
+.fa-desktop::after 		{content: "\f26c";}
+.fa-mobile::after 		{content: "\f10b";}
+.fa-apple::after 		{content: "\f179";}
+.fa-android::after 		{content: "\f17b";}
+.fa-comments::after 	{content: "\f086";}
+.fa-user::after 		{content: "\f007";}
+.fa-fort-awesome::after {content: "\f286";}
+.fa-youtube-play::after {content: "\f16a";}
+.fa-picture::after 		{content: "\f03e";}
+.fa-bomb::after 		{content: "\f1e2";}
+.fa-wrench::after 		{content: "\f0ad";}
+.fa-wifi::after 		{content: "\f1eb";}
+.cores{
+	color: #580000; /*vermelho escuro*/
+	color: #F45D00; /*laranja*/
+	color: #F4B331; /*amarelo*/
+}
+body{
+	margin:0;
+	padding:170px 0 0 0;
+	border:0;
+	font:normal 24px Cambria, Georgia, serif;
+	background-image: url(/logo.png);
+	background-repeat: no-repeat;
+	background-position: center top;
+	background-color: #580000;
+	color: #F4B331;
+}
+img{border:0;}
+a{
+	text-decoration: none;
+	color: #F45D00
+}
+footer{
+	text-align: center;
+	font-size: 12px;
+	background-color: rgba(0,0,0,0.5);
+	padding: 5px;
+}
+footer p{
+	margin: 0;
+}
+nav{
+	text-align: center;
+	font-size: 32px;
+	background-color: rgba(0,0,0,0.5);
+}
+nav a{
+	display: inline-block;
+	padding: 10px;
+	margin: 0 5px;
+	transition: .6s;
+}
+nav a:hover{
+	background-color: rgba(0,0,0,0.5);
+	color: #F4B331;
+	transition: .4s;
+}
+div.nav_n2{
+	display: inline-block;
+}
+section{
+	padding: 50px;
+	text-align: center;
+}
