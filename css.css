@@ -24,19 +24,23 @@
 .fa-bomb::after 		{content: "\f1e2";}
 .fa-wrench::after 		{content: "\f0ad";}
 .fa-wifi::after 		{content: "\f1eb";}
-.cores{
+.fa-facebook::after 	{content: "\f230";}
+.fa-deviantart::after 	{content: "\f1bd";}
+.referencia_de_cores{
 	color: #580000; /*vermelho escuro*/
+	color: #950000; /*vermelho claro*/
 	color: #F45D00; /*laranja*/
 	color: #F4B331; /*amarelo*/
 }
 body{
+	display: flex;
+	min-height: 100vh;
+	flex-direction: column;
+
 	margin:0;
-	padding:170px 0 0 0;
+	padding:0;
 	border:0;
 	font:normal 24px Cambria, Georgia, serif;
-	background-image: url(/logo.png);
-	background-repeat: no-repeat;
-	background-position: center top;
 	background-color: #580000;
 	color: #F4B331;
 }
@@ -47,12 +51,22 @@ a{
 }
 footer{
 	text-align: center;
-	font-size: 12px;
+	font-size: 16px;
 	background-color: rgba(0,0,0,0.5);
 	padding: 5px;
 }
 footer p{
 	margin: 0;
+}
+nav::before { 
+	content: "";
+	display: block;
+	height: 170px;
+	background-image: url(/logo.png), radial-gradient(circle 250px at bottom, #950000, rgba(0, 0, 0, 0));
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: contain;
+	background-color: #580000;
 }
 nav{
 	text-align: center;
@@ -70,10 +84,27 @@ nav a:hover{
 	color: #F4B331;
 	transition: .4s;
 }
-div.nav_n2{
-	display: inline-block;
-}
-section{
+main{
+	flex-grow: 1;
+	background: radial-gradient(circle closest-corner at top, #950000, rgba(0, 0, 0, 0));
 	padding: 50px;
 	text-align: center;
+}
+
+.flex{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: flex-start;
+}
+.flex > *{
+	background-color: rgba(0,0,0,0.5);
+	padding: 1em;
+	margin: 1em;
+	max-width: 100%;
+}
+
+body > div{
+	/*hack pra esconder propaganda da hospedagem gratuita*/
+	display: none;
 }

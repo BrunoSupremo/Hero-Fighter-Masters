@@ -2,29 +2,20 @@
 <head>
 	<title>Comunidade</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/css.css" type="text/css">
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="/javascript.js"></script> -->
 </head>
 <body>
 	<?php include("../nav.php"); ?>
-	<section>
-		<div>
-			<p class="fa fa-comments">Batepapo</p>
+	<main class="flex">
+		<div class="flex">
+		<a class="fa fa-home" href="http://www.herofighter.com/">Site Oficial</a>
+		<a class="fa fa-book" href="http://www.herofighter-empire.com/">Forum</a>
+		<a class="fa fa-facebook" href="https://www.facebook.com/groups/herofighter/">Grupo no Facebook</a>
+		<a class="fa fa-deviantart" href="http://hero-fighter-fans.deviantart.com/">Fan Art</a>
+		<a class="fa fa-users" href="https://discord.gg/3PUwmY8">Discord</a>
 		</div>
-		<div>
-			<p class="fa fa-user">Membros</p>
-		</div>
-		<div>
-			<p class="fa fa-fort-awesome">Clãs</p>
-		</div>
-		<div>
-			<p class="fa fa-picture">Imagens</p>
-		</div>
-		<div>
-			<p class="fa fa-youtube-play">Videos</p>
-		</div>
-	</section>
+	</main>
 	<?php include("../footer.php"); ?>
 </body>
 </html>

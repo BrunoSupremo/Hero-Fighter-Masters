@@ -1,33 +1,27 @@
 <html>
 <head>
-	<title>Hero Fighter Masters</title>
+	<title>Download</title>
 	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="/css.css" type="text/css">
-	<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
-	<script src="/javascript.js"></script> -->
 </head>
 <body>
 	<?php include("../nav.php"); ?>
-	<section>
+	<main class="flex">
 		<div>
 			<p class="fa fa-desktop">Computador</p>
-			<div>
-				<a href="http://www.mediafire.com/download/7yi8uux5g0oa166/HFv0.7.zip">v0.7</a>
-			</div>
-			<div>
-				server
+			<div class="flex">
+				<a href="http://www.mediafire.com/download/7yi8uux5g0oa166/HFv0.7.zip">Download</a>
 			</div>
 		</div>
 		<div>
 			<p class="fa fa-mobile">Celular</p>
-			<div>
-				<a class="fa fa-apple" href="https://itunes.apple.com/app/id953435594"></a>
-			</div>
-			<div>
-				<a class="fa fa-android" href="https://play.google.com/store/apps/details?id=air.com.martialstudio.herofighterx1"></a>
+			<div class="flex">
+				<a class="fa fa-apple" href="https://itunes.apple.com/app/id953435594">iOS</a>
+				<a class="fa fa-android" href="https://play.google.com/store/apps/details?id=air.com.martialstudio.herofighterx1">Android</a>
 			</div>
 		</div>
-	</section>
+	</main>
 	<?php include("../footer.php"); ?>
 </body>
 </html>
